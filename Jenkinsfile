@@ -3,13 +3,15 @@ pipeline {
   stages {
     stage('setup') {
       steps {
-        sh 'npm install'
-        sh 'yarn add danger --dev'
+        echo 'setup'
+        // sh 'npm install'
+        // sh 'yarn add danger --dev'
       }
     }
     stage('test') {
       steps {
-          sh 'yarn danger ci'
+        echo 'test'
+          // sh 'yarn danger ci'
       }
     }
     stage('build and deploy') {
