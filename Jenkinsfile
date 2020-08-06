@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('setup') {
       steps {
-        echo 'setup'
         sh 'npm install'
         sh 'yarn add danger --dev'
       }
