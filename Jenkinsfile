@@ -9,8 +9,8 @@ pipeline {
     }
     stage('test') {
       steps {
-        echo 'test'
-          sh 'yarn danger ci'
+        sh 'npm test'
+        sh 'yarn danger ci'
       }
     }
     stage('build and deploy') {
