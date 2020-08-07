@@ -7,7 +7,7 @@ pipeline {
         sh 'yarn add danger --dev'
       }
     }
-    stage('test') {
+    stage('tests') {
       steps {
         sh 'npm test'
         sh 'yarn danger ci'
