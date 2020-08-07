@@ -14,5 +14,5 @@ if (packageChanged) {
 
 // No assignee assigned
 if (danger.github.pr.assignee === null) {
-    warn('Please assign at least 1 assignee.');
+    warn('Assignee is required.');
 }
